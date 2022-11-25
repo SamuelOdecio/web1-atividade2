@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="css/pico.min.css">
+  <title>Document</title>
+</head>
+
+<body>
+
+  <main class="container">
+    <article>
+      <header>
+        <h1> Detalhes do Pagamento </h1>
+      </header>
+      <section class="grid">
+        <label>Número do Cartão:
+          <input name="cep" type="number" maxlength="16" />
+        </label>
+        <label>Nome:
+          <input name="cep" type="number" />
+        </label>
+        <label>Data de Vencimento:
+          <input placeholder="MM/YYY" name="cep" type="number" maxlength="7" />
+        </label>
+        <form id="consultarCep">
+          <label>Código de Segurença(CCV):
+            <input name="cep" type="number" maxlength="8" />
+          </label>
+          <button id="btnConfirmar">Confirmar</button>
+        </form>
+        <div id="dados">
+
+        </div>
+
+        <script type="module" src="/main.js"></script>
+
+        <div class="credit-card">
+          <div class="credit-card-front">
+            <div class="card-type">
+              Cartão de Crédito
+            </div>
+
+            <img class="flag" src="./visa-logo.png">
+
+            <div class="card-number">
+              #### #### #### ####
+            </div>
+            <div class="card-holder">
+              Fulano de Tal
+            </div>
+            <div class="expiration">
+              06/2021
+            </div>
+          </div>
+          <div class="credit-card-back">
+            <div class="stripe"></div>
+            <div class="ccv-block">
+              
+            </div>
+            <div class="flag">
+              <img class="flag" src="./visa-logo.png">
+            </div>
+          </div>
+
+      </section>
+    </article>
+
+  </main>
+
+
+
+
+</body>
+
+</html>
