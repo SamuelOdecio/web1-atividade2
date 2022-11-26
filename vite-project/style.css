@@ -72,3 +72,21 @@
   right: var(--padding);
   bottom: var(--padding);
 }
+
+
+.h1Pagamento{
+  text-align: center;
+}
+.credit-card{
+  margin-left: 10%;
+  width: 60%;
+}
+.formaLayout{
+  display: flex;
+}
+.labelPagamento{
+  margin-right: 2%;
+}
+.pagamentoCVV{
+  display: flex;
+}

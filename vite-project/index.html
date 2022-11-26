@@ -13,67 +13,67 @@
 <body>
 
   <main class="container">
-    <article>
-      <header>
-        <h1> Detalhes do Pagamento </h1>
-      </header>
-      <section class="grid">
-        <label>Número do Cartão:
-          <input name="cep" type="number" maxlength="16" />
+
+
+    <header class="h1Pagamento">
+      <h1> Detalhes do Pagamento </h1>
+    </header>
+    <div class="formaLayout">
+      <div class="formaPagamento">
+        <label class="labelPagamento">Número do Cartão:
+          <input name="numeroDoCartao" type="number" maxlength="16" />
         </label>
-        <label>Nome:
-          <input name="cep" type="number" />
+        <label class="labelPagamento">Nome:
+          <input type="text" name="nome" style="text-transform: uppercase" />
         </label>
-        <label>Data de Vencimento:
-          <input placeholder="MM/YYY" name="cep" type="number" maxlength="7" />
-        </label>
-        <form id="consultarCep">
-          <label>Código de Segurença(CCV):
-            <input name="cep" type="number" maxlength="8" />
+        <div class="pagamentoCVV">
+          <label class="labelPagamento">Data de Vencimento:
+            <input placeholder="MM/YYY" name="dataVencimento" type="number" maxlength="7" />
           </label>
-          <button id="btnConfirmar">Confirmar</button>
-        </form>
-        <div id="dados">
-
+          <form id="consultarCep">
+            <label class="labelPagamento">Código de Segurança(CCV):
+              <input name="cvv" type="number" maxlength="3" />
+            </label>
         </div>
+        <button class="labelPagamento" id="btnConfirmar">Confirmar</button>
+        </form>
 
-        <script type="module" src="/main.js"></script>
+      </div>
 
-        <div class="credit-card">
-          <div class="credit-card-front">
-            <div class="card-type">
-              Cartão de Crédito
-            </div>
 
+
+      <div class="credit-card">
+        <div class="credit-card-front">
+          <div class="card-type">
+            Cartão de Crédito
+          </div>
+
+          <img class="flag" src="./visa-logo.png">
+
+          <div class="card-number">
+            #### #### #### ####
+          </div>
+          <div class="card-holder">
+            Fulano de Tal
+          </div>
+          <div class="expiration">
+            06/2021
+          </div>
+        </div>
+        <div class="credit-card-back">
+          <div class="stripe"></div>
+          <div class="ccv-block">
+
+          </div>
+          <div class="flag">
             <img class="flag" src="./visa-logo.png">
-
-            <div class="card-number">
-              #### #### #### ####
-            </div>
-            <div class="card-holder">
-              Fulano de Tal
-            </div>
-            <div class="expiration">
-              06/2021
-            </div>
           </div>
-          <div class="credit-card-back">
-            <div class="stripe"></div>
-            <div class="ccv-block">
-              
-            </div>
-            <div class="flag">
-              <img class="flag" src="./visa-logo.png">
-            </div>
-          </div>
+        </div>
+      </div>
 
-      </section>
-    </article>
 
+      <script type="module" src="/main.js"></script>
   </main>
-
-
-
 
 </body>
 
