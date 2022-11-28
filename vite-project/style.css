@@ -77,16 +77,32 @@
 .h1Pagamento{
   text-align: center;
 }
+
 .credit-card{
-  margin-left: 10%;
+  margin-left: 5%;
   width: 60%;
 }
-.formaLayout{
+
+.layout {
   display: flex;
 }
-.labelPagamento{
-  margin-right: 2%;
+@media (max-width: 990px) {
+  .layout{
+    flex-direction: column;
+  }
+  .credit-card{
+    margin-left: 20%;
+    margin-top: 10%;
+    width: 60%;
+  }
 }
-.pagamentoCVV{
+
+
+.formaVencimento{
+  margin-right: 5px;
+}
+
+.formaPagamento {
   display: flex;
 }
+
